@@ -181,7 +181,7 @@ handsome.Radio = (function() {
     };
 
     Radio.prototype.triggerClicked = function() {
-            $('.bt-radio-trigger[data-radioname=' + this.targetRadio.prop('name') + ']').removeClass('checked');
+            $('.bt-radio-trigger[data-radioname="' + this.targetRadio.prop('name') + '"]').removeClass('checked');
             this.radioTrigger.addClass('checked');
             this.radioSisters.prop('checked', false);
             this.targetRadio.prop('checked', true);
